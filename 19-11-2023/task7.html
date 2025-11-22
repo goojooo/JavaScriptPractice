@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 7</title>
+  </head>
+  <body>
+    <script>
+      // Input: Any integer
+      // Task:2
+
+      // If number > 0
+
+      // If number is even → "Positive Even"
+
+      // Else → "Positive Odd"
+
+      // Else if number < 0
+
+      // If number is even → "Negative Even"
+
+      // Else → "Negative Odd"
+
+      // Else → "Zero"
+
+      let num = prompt("Enter number....");
+
+      if (num > 0) {
+        if (num % 2 == 0) {
+          console.log("Positive Even...");
+        } else {
+          console.log("Positive Odd...");
+        }
+      } else if (num < 0) {
+        if (num % 2 == 0) {
+          console.log("Negative Even...");
+        } else {
+          console.log("Negative Odd...");
+        }
+      } else if(num == 0){
+           console.log("ZERO");
+      } else{
+        console.log("Invalid Input...")
+      }
+    </script>
+  </body>
+</html>

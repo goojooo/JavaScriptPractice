@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task</title>
+  </head>
+  <body>
+    <script>
+      // Find maximun and minimum number from three integer number(Take input from user)
+
+      let a = prompt("Enter the value of a ");
+      let b = prompt("Enter the value of b ");
+      let c = prompt("Enter the value of c ");
+
+      if (a > b && a > c) {
+        console.log("A is largest number...");
+        if (b < c) {
+          console.log("B is smallest number...");
+        } else {
+          console.log("C is smallest number...");
+        }
+      } else if (b > a && b > c) {
+        console.log("B is largest number...");
+        if (a < c) {
+          console.log("A is smallest number...");
+        } else {
+          console.log("C is smallest number...");
+        }
+      } else if (c > a && c > b) {
+        console.log("C is largest number...");
+          if (a < b) {
+          console.log("A is smallest number...");
+        } else {
+          console.log("B is smallest number...");
+        }
+      } else if( a == b == c){
+        console.log("All are equals...")
+      }
+    </script>
+  </body>
+</html>

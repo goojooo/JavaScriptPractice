@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Simple Calculator
+
+      // Input: Two numbers and an operator (+, -, *, /)
+
+      // Output: Result of the operation using switch case on the operator
+
+      let choice = parseInt(prompt("Enter choice..."));
+      console.log("---Menu---");
+      console.log("---1 . ADDITION---");
+      console.log("---2 . SUBSTRACTION---");
+      console.log("---3 . MULTIPLICATION---");
+      console.log("---4 . DIVISION---");
+
+      switch (choice) {
+        case 1: {
+          let x = parseInt(prompt("Enter x"));
+          let y = parseInt(prompt("Enter y"));
+          console.log(`ADDITION of ${x} and ${y} is`, x + y);
+
+          break;
+        }
+        case 2: {
+          let x = parseInt(prompt("Enter x"));
+          let y = parseInt(prompt("Enter y"));
+          console.log(`SUBSTRACTION of ${x} and ${y} is`, x - y);
+          break;
+        }
+        case 3: {
+          let x = parseInt(prompt("Enter x"));
+          let y = parseInt(prompt("Enter y"));
+          console.log(`MULTIPLICATION of ${x} and ${y} is`, x * y);
+          break;
+        }
+        case 4: {
+          let x = parseInt(prompt("Enter x"));
+          let y = parseInt(prompt("Enter y"));
+          console.log(`DIVISION of ${x} and ${y} is`, x / y);
+          break;
+        }
+
+        default:
+          "Invalid day...";
+      }
+    </script>
+  </body>
+</html>
