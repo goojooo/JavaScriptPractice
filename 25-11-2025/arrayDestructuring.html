@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARRAY DESTRUCTURING</title>
+</head>
+<body>
+    <script>
+        // What it does :
+        // Lets you unpack values from an array into separate variable in a simple, clean way.
+        // Example :
+
+        let color = ["red" , "orange" , "pink"];
+
+
+        let [f,s,t]= color;
+        console.log(f);
+        console.log(s);
+        // console.log(t);
+        console.log(color);
+
+        // SKipping values
+
+        let [a,,c] = [11,22,33];
+        console.log(a,c);
+    </script>
+</body>
+</html>
