@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPREAD OPERATOR</title>
+</head>
+<body>
+    <script>
+        // What it does :
+        // It expands an array or object into individual elements.
+
+        // 1. Copy an array
+
+        let arr1= [11,22,33];
+        let arr2=[...arr1];
+        console.log(arr2);
+
+        // 2. Merge arrays
+
+        let a = [6,9];
+        let b = [69];
+
+        let merge = [...a,...b];
+        console.log(merge);
+
+        // 3. Spread in function arguments
+
+        function sum(x,y,z){
+            return x+y+z;
+        }
+
+        let numbers = [11,22,33];
+        console.log(sum(...numbers));
+        
+    </script>
+</body>
+</html>
