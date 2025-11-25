@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLAT()</title>
+</head>
+<body>
+    <script>
+        //flat() is used to flatten (reduce nesting) of an array.
+
+        //Example: Flatten one level
+
+        let arr=[1,[2,3],[4,5]];
+
+        let flatArr= arr.flat();
+
+        console.log(flatArr);
+
+        //Example: Flatten deeply nested arrays 
+
+        let nested=[1,[2,[3,[4,[5]]]]];
+
+        let deepFlatten = nested.flat(4);
+
+        console.log(deepFlatten);
+    </script>
+</body>
+</html>
