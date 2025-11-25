@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOME ()</title>
+</head>
+<body>
+    <script>
+        // What is does :
+        // Tests if at least one element in the array passes a condition.
+        // Return true or false
+
+        // Example : Check if any number is greater than 10
+
+        let nums = [2,3,10,1];
+
+        let result = nums.some(x => x > 10);
+
+        console.log(result);
+
+        // Example 2: Check if any string starts with "A"
+
+        let names = ["Nayan", "Keshri", "Anvi"];
+
+        let chk = names.some(name => name.startsWith("a"));
+        console.log(chk) // false (caseSensitive)
+    </script>
+</body>
+</html>
