@@ -7,60 +7,64 @@
   </head>
   <body>
     <script>
-      //         1. Find the Largest Number in an Array
+      // 1. Find the Largest Number in an Array
       //   Example: [1, 5, 3, 9, 2] → 9
       // let a = [1, 5, 3, 9, 2];
       // let max = Math.max(...a);
       // console.log(max);
 
-      //         2. Reverse an Array Without Using reverse()
+      // 2. Reverse an Array Without Using reverse()
       //    Expected output: [5,4,3,2,1]
 
-      let arr = [1, 20, 3, 55, 5];
-      let start = 0;
-      end = arr.length - 1;
+      // let arr = [1, 20, 3, 55, 5];
+      // let start = 0;
+      // end = arr.length - 1;
 
-      while (start < end) {
-        let temp = arr[start];
-        arr[start] = arr[end];
-        arr[end] = temp;
-        start++;
-        end--;
-      }
-      console.log(arr);
+      // while (start < end) {
+      //   let temp = arr[start];
+      //   arr[start] = arr[end];
+      //   arr[end] = temp;
+      //   start++;
+      //   end--;
+      // }
+      // console.log(arr);
 
       // console.log(c.reverse());
 
-      //         3. Count Even Numbers in an Array
-      //   Array input → count how many numbers are even.
+      // 3. Count Even Numbers in an Array ---
+      // Array input → count how many numbers are even.
 
-   
       let brr = [11, 22, 33, 44, 55, 66, 77, 88, 99];
       console.log(brr);
       let count = 0;
-      for(let i = 0; i < brr.length; i++)
-      {
-        if(brr[i] % 2 == 0)
-        {
+      for (let i = 0; i < brr.length; i++) {
+        if (brr[i] % 2 == 0) {
           count++;
         }
       }
       console.log("Even numbers count:", count);
 
-      let sumArr= [11,22,33,44,55,66,77];
-      sum = 0;
-      for(let i = 0; i < sumArr.lenght; i++)
-      {
-        sum = sum+sumArr[i];
-        // sumArr[i] = sumArr[i]+i;
-        sum++;
-      }
-      console.log(sum);
+      // 4. Sum of Array Elements
+      //  Using a loop
+      // let num = [11, 22, 33, 44, 55, 66, 77];
+      // let sum = 0;
+      // for (let i = 0; i < num.length; i++) {
+      //   sum += num[i];
+      // }
+      // console.log(sum);
 
-    //   8.Print Numbers from 1 to 50
-    for(let i = 1 ; i <= 50; i++)
-    {
-        console.log(i);
-    }
+      //   8.Print Numbers from 1 to 50
+      // for(let i = 1 ; i <= 50; i++)
+      // {
+      //     console.log(i);
+      // }
+
+      // 9. Print Table of Any Number (e.g. 2, 5, 7)
+      let table = prompt("Enter number that you want table of it...")
+      // for(let i = 1; i <=10; i++)
+      // {
+      //   console.log(`${table} X ${i} =`, table*i)
+      // }
     </script>
   </body>
+</html>

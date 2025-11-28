@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 21. let str = "hello javascript world";Tasks:
+      //   TASK on ABove STring :
+      //   Count vowels
+      //   Remove spaces
+      //   Convert to array of characters
+      //   Find most repeated character
+      //   Reverse the string without using reverse()
+
+      let str = "hello javascript world";
+
+      let cnt = 0;
+      for (let i = 0; i < str.length; i++) {
+        if (
+          str[i] == "a" ||
+          str[i] == "e" ||
+          str[i] == "i" ||
+          str[i] == "o" ||
+          str[i] == "u"
+        ) {
+          cnt++;
+        }
+      }
+      console.log(`The vowel count in the given String is ${cnt}`);
+      console.log(str.replaceAll(" ",""))
+    </script>
+  </body>
+</html>
