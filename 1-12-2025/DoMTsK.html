@@ -24,8 +24,11 @@
     <script>
       //use getElementByTagName("p") method and access only the second div paragraphs
       let x = document.getElementsByTagName("p");
+      let y = document.querySelector(".second");
       for (let i = 0; i < x.length; i++) {
-        console.log(x[i]);
+       if(y){
+        console.log(y[i])
+       }
       }
     </script>
   </body>
