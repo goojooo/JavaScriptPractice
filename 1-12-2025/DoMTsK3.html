@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 3</title>
+</head>
+<body>
+    <!-- 3 Access the 5 span by using tag and console it using for loop -->
+     <span>1--- 3 Access the 5 span by using tag and console it using for</span> <br>
+     <span>2--- 3 Access the 5 span by using tag and console it using for</span> <br>
+     <span>3--- 3 Access the 5 span by using tag and console it using for</span> <br>
+     <span>4--- 3 Access the 5 span by using tag and console it using for</span> <br>
+     <span>5--- 3 Access the 5 span by using tag and console it using for</span>
+     <script>
+        let x = document.getElementsByTagName("span");
+        for(let i = 0 ; i < x.length ; i++)
+     {
+        console.log(x[i].textContent)
+     }
+     </script>
+</body>
+</html>

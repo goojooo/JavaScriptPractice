@@ -23,12 +23,13 @@
 
     <script>
       //use getElementByTagName("p") method and access only the second div paragraphs
-      let x = document.getElementsByTagName("p");
-      let y = document.querySelector(".second");
-      for (let i = 0; i < x.length; i++) {
-       if(y){
-        console.log(y[i])
-       }
+      let x = document.getElementsByTagName("div");
+      // console.log(x);
+
+      let y = x[1];
+      let z = y.getElementsByTagName("p");
+      for (let i = 0; i < z.length; i++) {
+        console.log(z[i].textContent);
       }
     </script>
   </body>

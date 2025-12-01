@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM 2</title>
+  </head>
+  <body>
+    <!-- 2. Access the 5 paragraphs by using class and console it using for loop -->
+    <p class="para">
+      1--- 2 access the 5 paragraphs by using class and console it using for loop
+    </p>
+    <p class="para">
+      2--- 2 access the 5 paragraphs by using class and console it using for loop
+    </p>
+    <p class="para">
+      3--- 2 access the 5 paragraphs by using class and console it using for loop
+    </p>
+    <p class="para">
+      4--- 2 access the 5 paragraphs by using class and console it using for loop
+    </p>
+    <p class="para">
+      5--- 2 access the 5 paragraphs by using class and console it using for loop
+    </p>
+    <script>
+      let x = document.getElementsByClassName("para");
+      for (let i = 0; i < x.length; i++) {
+        console.log(x[i].textContent);
+      }
+    </script>
+  </body>
+</html>
