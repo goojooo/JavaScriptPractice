@@ -1,11 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Javascript</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exception</title>
+  </head>
+  <body>
+    <script>
+      //   try{
+      //       console.log(x);
+      //   } catch(err){
+      //     // console.error(err);
+      //     // console.warn(err);
+      //     console.log(err);
+      //   }
+      //   finally{
+      //     console.log("Resourses close()")
+      //   }
+      // //   console.log("Handled")
+
+      try {
+        function demo(b) {
+          if (b==0) {
+            throw new Error("Can't divide by 0");
+        }
+        console.log(10/b)
+        }
+      } catch {
+        console.log("Error.");
+      } finally {
+        console.log("Finally");
+      }
+    //   demo(0);
+      demo(2);
+      console.log("END");
+    </script>
+  </body>
 </html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+  </head>
+  <body>
+    <!-- <p id="demo">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum odio
+      architecto harum corrupti officiis sapiente recusandae! Architecto dolor
+      odit sint error natus sequi repudiandae harum, a aut iure, impedit alias!
+    </p> -->
+    <span class="hehe">Span 1 tags</span> <br />
+    <span class="hehe">Span 2 tags</span> <br />
+    <span class="hehe">Span 3 tags</span> <br />
+    <span class="hehe">Span 4 tags</span> <br />
+    <script>
+      // DOM ACCESSING METHOD
+      // 1-> By id getElemntById();
+
+      //   let para = document.getElementById("demo");
+      //   // console.log(para.nodeName);
+      //   // console.log(para.tagName);
+      //   console.log(para);
+
+      // By class - getElementsByClassName();
+
+    //   let xxx = document.getElementsByClassName("hehe");
+    // //   console.log(xxx);
+    //     for(let  i = 0 ; i < xxx.length ; i++)
+    // {
+    //     console.log(xxx[i]);
+    // }
+      // By Tag - getElementsByClassName();
+
+    //   let xyx = document.getElementsByTagName("span");
+    // //   console.log(xxx);
+    //     for(let  i = 0 ; i < xyx.length ; i++)
+    // {
+    //     console.log(xyx[i]);
+    // }
+
+        // By querySelector()
+
+        // let qS = document.querySelector(".hehe");
+        // console.log(qS);
+        let qSall = document.querySelectorAll(".hehe");
+        console.log(qSall[0]);
+    </script>
+  </body>
+</html>
