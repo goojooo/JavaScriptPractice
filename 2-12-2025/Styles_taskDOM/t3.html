@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STYLE TASK 3</title>
+    <style>
+      ul {
+        display: flex;
+        justify-content: space-between;
+    }
+    ul li a{
+
+        text-decoration: none;
+        color:black;
+    }
+    .active{
+        background-color: yellow;
+        color:white;
+    }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div>
+        <ul type="none">
+          <li><a href="#" onclick="home()">HOME</a></li>
+          <li><a href="#" onclick="ser()">SERVIES</a></li>
+          <li><a href="#" onclick="abt()">ABOUT</a></li>
+          <li><a href="#" onclick="con()">CONTACT</a></li>
+        </ul>
+      </div>
+    </section>
+    <script>
+      // Task 3: Add Active Class on Menu Items
+      // Create a navigation menu with 4 items.
+      // When the user clicks any item:
+      // Remove active class from all items
+      // Add active class to the clicked item
+      // Active item should be highlighted using CSS.
+        let x = document.querySelectorAll("a");
+
+//           function home() {
+//     alert("Hello from the link!");
+//   }
+      function home(){
+        x.classList.add(".active");
+      }
+    </script>
+  </body>
+</html>
