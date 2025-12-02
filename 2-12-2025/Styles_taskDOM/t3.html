@@ -8,16 +8,15 @@
       ul {
         display: flex;
         justify-content: space-between;
-    }
-    ul li a{
-
+      }
+      ul li a {
         text-decoration: none;
-        color:black;
-    }
-    .active{
+        color: black;
+      }
+      .active {
         background-color: yellow;
-        color:white;
-    }
+        color: white;
+      }
     </style>
   </head>
   <body>
@@ -28,6 +27,7 @@
           <li><a href="#" onclick="ser()">SERVIES</a></li>
           <li><a href="#" onclick="abt()">ABOUT</a></li>
           <li><a href="#" onclick="con()">CONTACT</a></li>
+          <!-- <button onclick="xx()">xx</button> -->
         </ul>
       </div>
     </section>
@@ -38,13 +38,28 @@
       // Remove active class from all items
       // Add active class to the clicked item
       // Active item should be highlighted using CSS.
-        let x = document.querySelectorAll("a");
+      let x = document.querySelectorAll("ul li a");
+    //   let y = document.querySelector("a");
+    //   let z = document.querySelector("a");
+    //   let zz = document.querySelector("a");
 
-//           function home() {
-//     alert("Hello from the link!");
-//   }
-      function home(){
+      //           function home() {
+      //     alert("Hello from the link!");
+      //   }
+      function home() {
         x.classList.add(".active");
+      }
+      function ser() {
+        y.classList.add("active");
+        x.classList.remove("active");
+      }
+      function abt() {
+        z.classList.add("active");
+        x.classList.remove("active");
+      }
+      function con() {
+        zz.classList.add("active");
+        x.classList.remove("active");
       }
     </script>
   </body>
