@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STYLE TASK 2</title>
+    <style>
+        .hidden{
+            display:none;
+        }
+    </style>
+  </head>
+  <body>
+    <section>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum minima asperiores, expedita nemo dolorum totam vero necessitatibus consequuntur, deleniti, nam libero sit vitae neque quis est! Laudantium distinctio expedita minima!</p>
+        <button onclick="onOff()">HeHe</button>
+    </section>
+    <script>
+      // Task 2: Show / Hide Content
+      // Create a paragraph and a button.
+      // When clicking the button:
+      // If the paragraph is visible, add a class hidden and hide it.
+      // If hidden, remove that class and show it again.
+      // Use CSS to style .hidden { display: none; }
+      let x = document.querySelector("p");
+      function onOff(){
+        x.classList.toggle("hidden");
+      }
+    </script>
+  </body>
+</html>
