@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STYLE TASK 10</title>
+    <style>
+      .small-text {
+        font-size: 8px;
+        background-color: brown;
+      }
+      .large-text {
+        font-size: 36px;
+        background-color: rgb(164, 207, 255);
+      }
+      .normal-text {
+        font-size: 16px;
+        background-color: rgb(253, 52, 146);
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit
+        consectetur nulla quam excepturi consequatur debitis id blanditiis,
+        quasi culpa possimus quia aliquid molestiae inventore placeat eligendi
+        quod perspiciatis. Perferendis, vero!
+      </p>
+      <div>
+        <button onclick="increaseFont()">Increase Font</button>
+        <button onclick="decreaseFont()">Decrease Font</button>
+        <button onclick="resetFont()">Reset Font</button>
+      </div>
+    </section>
+    <script>
+      // Task 10: Change Font Size Using Buttons
+      // Create a paragraph and 3 buttons:
+      // Increase font
+      // Decrease font
+      // Reset font
+      // Use classList to apply classes:
+      // .small-text
+      // .large-text
+      // .normal-text
+      let x = document.querySelector("p");
+      function increaseFont() {
+        x.classList.remove("small-text");
+        x.classList.remove("normal-text");
+        x.classList.add("large-text");
+      }
+      function decreaseFont() {
+        x.classList.remove("large-text");
+        x.classList.remove("normal-text");
+        x.classList.add("small-text");
+      }
+      function resetFont() {
+        x.classList.remove("small-text");
+        x.classList.remove("large-text");
+        x.classList.add("normal-text");
+      }
+    </script>
+  </body>
+</html>
