@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STYLE TASK 4</title>
+    <style>
+        section{
+        text-align: center;
+
+        }
+      div {
+        width: 150px;
+        height: 150px;
+        margin: auto;
+        margin-bottom: 12px;
+      }
+      .red {
+        width: 150px;
+        height: 150px;
+        background-color: red;
+      }
+      .green {
+        width: 150px;
+        height: 150px;
+        background-color: green;
+      }
+      .blue {
+        width: 150px;
+        height: 150px;
+        background-color: blue;
+      }
+      .reset {
+        background-color: transparent;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div></div>
+      <button onclick="redBtn()">RED</button>
+      <button onclick="greenBtn()">GREEN</button>
+      <button onclick="blueBtn()">BLUE</button>
+      <button onclick="reset()">RESET</button>
+    </section>
+    <script>
+      // Task 4: Change Box Color on Click
+      // Create a square <div> box.
+      // Make 3 buttons:
+      // Red
+      // Green
+      // Blue
+      // When clicking a button:
+      // Remove all previous color classes (redBox, greenBox, etc)
+      let x = document.querySelector("div");
+
+      function redBtn() {
+        x.classList.add("red");
+        x.classList.remove("green");
+        x.classList.remove("blue");
+        x.classList.remove("reset");
+      }
+      function greenBtn() {
+        x.classList.add("green");
+        x.classList.remove("red");
+        x.classList.remove("blue");
+        x.classList.remove("reset");
+      }
+      function blueBtn() {
+        x.classList.add("blue");
+        x.classList.remove("green");
+        x.classList.remove("red");
+        x.classList.remove("reset");
+      }
+      function reset() {
+        x.classList.add("reset");
+      }
+    </script>
+  </body>
+</html>
