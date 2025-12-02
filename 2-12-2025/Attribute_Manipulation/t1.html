@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TASK 1</title>
+    <style>
+      section {
+        width: 80%;
+        margin: auto;
+      }
+      div {
+        display: flex;
+        margin-top: 8px;
+      }
+      img {
+        max-height: 80vh;
+      }
+      button {
+        width: fit-content;
+        padding: 12px 16px;
+        background-color: aqua;
+        color: rgb(0, 0, 0);
+        border: none;
+        border-radius: 24px;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <img width="100%;" src="assets/1323165.png" alt="" />
+      <div>
+        <button onclick="carImg()">Car-image</button>
+        <button onclick="bikeImg()">Bike-image</button>
+        <button onclick="natureImg()">Nature-image</button>
+        <button onclick="byDefault()">Default-image</button>
+      </div>
+    </section>
+    <script>
+      //  Task 1: Change Image Source
+      // Create an image with a default picture.
+      // Add 3 buttons:
+      // Load Car
+      // Load Bike
+      // Load Nature
+      // When clicking a button:
+      // Use setAttribute("src", "...") to change the image source.
+      function carImg() {
+        let x = document.querySelector("img");
+        x.setAttribute(
+          "src",
+          "assets/elegant-classic-car-with-retro-color-photo.jpg"
+        );
+      }
+      function bikeImg() {
+        let x = document.querySelector("img");
+        x.setAttribute("src", "assets/009_generated.jpg");
+      }
+      function natureImg() {
+        let x = document.querySelector("img");
+        x.setAttribute(
+          "src",
+          "assets/vecteezy_wildlife-elk-in-forest-nature-landscape-vector-illustration_.jpg"
+        );
+      }
+      function byDefault() {
+        let x = document.querySelector("img");
+        x.setAttribute("src", "assets/1323165.png");
+      }
+    </script>
+  </body>
+</html>
