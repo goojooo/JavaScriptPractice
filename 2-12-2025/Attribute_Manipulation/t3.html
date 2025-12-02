@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TASK 3</title>
+      <style>
+      button {
+        width: fit-content;
+        padding: 12px 16px;
+        background-color: aqua;
+        color: rgb(0, 0, 0);
+        border: none;
+        border-radius: 24px;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+        <a href="####"></a>
+        <button onclick="showLink()">SHOW "href"</button>
+        <p id="show"></p>
+    </section>
+    <script>
+      // Task 3: Show Value of Attribute
+      // Create a link <a> tag.
+      // Add a button “Show Href”.
+      // When button is clicked:
+      // Use getAttribute("href")
+      // Display the value inside a paragraph.
+         function showLink(){
+        let link = document.querySelector("a");
+        let url = link.getAttribute("href");
+        let para = document.getElementById("show");
+        para.innerText = url;
+
+        // alert(url);
+
+      }
+    </script>
+  </body>
+</html>
