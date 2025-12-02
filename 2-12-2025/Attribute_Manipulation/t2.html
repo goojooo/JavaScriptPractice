@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TASK 2</title>
+    <style>
+      button {
+        width: fit-content;
+        padding: 12px 16px;
+        background-color: aqua;
+        color: rgb(0, 0, 0);
+        border: none;
+        border-radius: 24px;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <form action="">
+        <input type="text" disabled="true" />
+      </form>
+      <button onclick="removeAttr()">Enable / Disable</button>
+    </section>
+    <script>
+      // Task 2: Toggle Disabled Attribute
+      // Create a text input and a button “Enable/Disable”.
+      // When button is clicked:
+      // If the input hasAttribute("disabled"), remove it.
+      // Else setAttribute("disabled", true).
+      let x = document.querySelector("input");
+
+      x.hasAttribute("disabled");
+      function removeAttr() {
+        // x.classList.remove("disabled");
+        // x.setAttribute("disabled", "false")
+
+        if (x.hasAttribute("disabled")) {
+          x.removeAttribute("disabled"); // enable input
+        } else {
+          x.setAttribute("disabled", true); // disable input
+        }
+      }
+    </script>
+  </body>
+</html>
