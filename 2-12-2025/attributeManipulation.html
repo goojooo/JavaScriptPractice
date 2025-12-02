@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attribute Manipulation</title>
+  </head>
+  <body>
+    <img src="https://picsum.photos/200/300.jpg" alt="" />
+    <button onclick="changeImg()">Change Img</button>
+
+    <hr>
+    <a href="https://picsum.photos/" target="_blank">Click</a>
+    <button onclick="getData()">getData</button>
+    <hr>
+
+    <button onclick="removeTarget()">Remove target</button>
+    <hr>
+    <button onclick="hasAttribute()">hasAttribute</button>
+    <script>
+      // Attribute Manipulation
+      // 5) By using setAttribute();
+      // syntax :- element.setAtrributr("AttrName","AttrValue");
+      function changeImg(){
+        let img = document.querySelector("img");
+        img.setAttribute("src", "https://picsum.photos/seed/picsum/200/300");
+
+      }
+
+      function getData(){
+        let link = document.querySelector("a");
+        let url = link.getAttribute("href");
+        let targetV = link.getAttribute("target");
+        alert(url);
+        alert(targetV);
+
+      }
+      function removeTarget(){
+        let link = document.querySelector("a");
+        let tV = link.removeAttribute("target");
+        alert("target remoevd....");
+      }
+
+      function hasAttribute(){
+        let link = document.querySelector("a");
+        let output = link.hasAttribute("target")
+        console.log(output)
+      }
+    </script>
+  </body>
+</html>
