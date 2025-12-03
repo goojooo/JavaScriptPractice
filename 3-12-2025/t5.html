@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TASK 5</title>
+    <style>
+      section {
+        display: flex;
+        width: 100%;
+        padding: 80px;
+        gap: 24px;
+      }
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      button {
+        border: none;
+        background: white;
+        border-radius: 16px;
+        font-weight: 700;
+        padding: 4% 6%;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div
+        id="one"
+        style="width: 150px; height: 150px; background-color: firebrick"
+      >
+        <button onclick="removeBox1()">Remove1 Box</button>
+      </div>
+      <div
+        id="two"
+        style="width: 150px; height: 150px; background-color: rgb(48, 34, 178)"
+      >
+        <button onclick="removeBox2()">Remove2 Box</button>
+      </div>
+      <div
+        id="three"
+        style="width: 150px; height: 150px; background-color: rgb(28, 247, 255)"
+      >
+        <button onclick="removeBox3()">Remove3 Box</button>
+      </div>
+    </section>
+    <script>
+      // Task 5: Remove Element Using .remove()
+      // Create three boxes (div) with background colors.
+      // Add a button under each box: "Remove Me"
+      // On button click:
+      // Use .remove() to delete that div from the DOM.
+      function removeBox1() {
+        let box = document.querySelector("#one");
+        box.remove();
+      }
+      function removeBox2() {
+        let box = document.querySelector("#two");
+        box.remove();
+      }
+      function removeBox3() {
+        let box = document.querySelector("#three");
+        box.remove();
+      }
+    </script>
+  </body>
+</html>
