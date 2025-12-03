@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TASK 10</title>
+  </head>
+  <body>
+    <section>
+      <a href="##">link</a>
+      <button onclick="removeLink()">Remove link</button>
+    </section>
+    <script>
+      // Task 10: Remove Hyperlink
+      // Create an anchor tag with href.
+      // Add a button “Remove Link”.
+      // When clicked:
+      // Use removeAttribute("href")
+      // The link should no longer work
+      let x = document.querySelector("a");
+      function removeLink() {
+        x.removeAttribute("href");
+      }
+    </script>
+  </body>
+</html>
