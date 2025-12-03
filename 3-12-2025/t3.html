@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TASK 3</title>
+  </head>
+  <body>
+    <section>
+        <div>
+           <a href="">
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus tenetur quasi impedit rerum nulla similique repellendus ullam ut maiores commodi laudantium facere consectetur, error dolore? Quis nobis fugit quasi commodi!</p>
+           </a>
+            <button onclick="replaceData()">Replace Data</button>
+        </div>
+    </section>
+    <script>
+      // Task 3: Replace an Existing Element
+      // Create two elements in HTML: a paragraph and a button.
+      // On button click:
+      // Create a new paragraph
+      // Replace the old paragraph with the new one using replaceChild().
+
+      function replaceData(){
+
+        let para = document.createElement("p");
+        let proudR = document.createTextNode(`"Data is replace successfully..."`);
+
+        para.appendChild(proudR);
+        let r = document.querySelector("p");
+        let parent = document.querySelector("a");
+        parent.replaceChild(para,r);
+          }
+    </script>
+  </body>
+</ht
