@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TASK 9</title>
+  </head>
+  <body>
+    <section>
+      <img src="assets/1323165.png" width="75%" height="100%" alt="" />
+      <button onclick="chkBDSM()">Check dimensions</button>
+      <p id="w"></p>
+      <p id="h"></p>
+    </section>
+    <script>
+      // Task 09: Show Image Width/Height
+      // Create an image.
+      // Add a button “Check Image Size”.
+      // When clicked:
+      // Use getAttribute('width') and getAttribute('height')
+      // Display them in a paragraph.
+      let x = document.querySelector("img");
+      function chkBDSM() {
+        let y = x.getAttribute("width");
+        let z = x.getAttribute("height");
+        let shwX = document.getElementById("w");
+        let shwY = document.getElementById("h");
+
+        shwX.innerText = y;
+        shw.YinnerText = z;
+      }
+    </script>
+  </body>
+</html>
