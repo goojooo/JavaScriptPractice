@@ -13,17 +13,17 @@
       <button onclick="removeAttr()">Enable / Disable</button>
       <button type="submit">submit</button> -->
       <form action="" method="get" class="form-example">
+        <div class="form-example">
+          <label for="email">Enter your email: </label>
+          <input id="xxx" type="email" name="email" id="email" />
+        </div>
+        <div class="form-example">
+          <button onclick="enable()">Enable </button>
+          <button onclick="disable()">Disable</button>
 
-  <div class="form-example">
-    <label for="email">Enter your email: </label>
-    <input type="email" name="email" id="email" required />
-  </div>
-  <div class="form-example">
-      <button onclick="removeAttr()">Enable / Disable</button>
-
-    <input type="submit" value="Subscribe!" />
-  </div>
-</form>
+          <input type="submit" value="Subscribe!" />
+        </div>
+      </form>
     </section>
     <script>
       // Task 11: Required Fields Toggle
@@ -32,18 +32,29 @@
       // If inputs do not have required → add required
       // Else → remove required
       // Use hasAttribute, setAttribute & removeAttribute.
-      let x = document.querySelector("input");
+      //   let x = document.querySelector("input");
 
-      x.hasAttribute("required");
-      function removeAttr() {
-        // x.classList.remove("disabled");
-        // x.setAttribute("disabled", "false")
+      //   x.hasAttribute("required");
+      //   function removeAttr() {
+      //     // x.classList.remove("disabled");
+      //     // x.setAttribute("disabled", "false")
 
-        if (x.hasAttribute("required")) {
-          x.removeAttribute("required"); // enable input
-        } else {
-          x.setAttribute("required"); // disable input
-        }
+      //     if (x.hasAttribute("required")) {
+      //       x.removeAttribute("required"); // enable input
+      //     } else {
+      //       x.setAttribute("required",""); // disable input
+      //     }
+      //   }
+      let vid = document.getElementById("xxx");
+
+      function enable() {
+        vid.setAttribute("required", "");
+        vid.load();
+      }
+
+      function disable() {
+        vid.removeAttribute("required");
+        vid.load();
       }
     </script>
   </body>
