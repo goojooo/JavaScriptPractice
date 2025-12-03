@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TASK 1</title>
+  </head>
+  <body>
+    <!-- // Task 1: Create a List Dynamically
+        // Create a webpage where clicking a button will:
+        // Create a <li> element using createElement()
+        //     Add text inside it using createTextNode()
+        //     Append it into an existing <ul> using appendChild() -->
+
+    <section>
+      <div>
+        <ul></ul>
+      </div>
+      <button onclick="addNode()">Add</button>
+    </section>
+    <script>
+      function addNode() {
+        let newLi = document.createElement("li");
+        console.log(newLi);
+
+        let liData = document.createTextNode("Dynamically typed data...");
+        // console.log(liData);
+
+        newLi.appendChild(liData);
+        // console.log(newLi);
+
+        let ulTag = document.querySelector("ul");
+        ulTag.appendChild(newLi);
+      }
+    </script>
+  </body>
+</html>
