@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TASK 11</title>
+  </head>
+  <body>
+    <section>
+      <!-- <form action="">
+        <input type="text" required/>
+      </form>
+      <button onclick="removeAttr()">Enable / Disable</button>
+      <button type="submit">submit</button> -->
+      <form action="" method="get" class="form-example">
+
+  <div class="form-example">
+    <label for="email">Enter your email: </label>
+    <input type="email" name="email" id="email" required />
+  </div>
+  <div class="form-example">
+      <button onclick="removeAttr()">Enable / Disable</button>
+
+    <input type="submit" value="Subscribe!" />
+  </div>
+</form>
+    </section>
+    <script>
+      // Task 11: Required Fields Toggle
+      // Create a form.
+      // Add a button:
+      // If inputs do not have required → add required
+      // Else → remove required
+      // Use hasAttribute, setAttribute & removeAttribute.
+      let x = document.querySelector("input");
+
+      x.hasAttribute("required");
+      function removeAttr() {
+        // x.classList.remove("disabled");
+        // x.setAttribute("disabled", "false")
+
+        if (x.hasAttribute("required")) {
+          x.removeAttribute("required"); // enable input
+        } else {
+          x.setAttribute("required"); // disable input
+        }
+      }
+    </script>
+  </body>
+</html>
