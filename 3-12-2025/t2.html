@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TASK 2</title>
+  </head>
+  <body>
+    <section>
+      <div>
+        <ul>
+          <li>First li</li>
+          <li id="sec">Second li</li>
+          <li>Third li</li>
+          <li>Fourth li</li>
+        </ul>
+      </div>
+      <button onclick="insertLi()">Insert List</button>
+    </section>
+    <script>
+      // Task 2: Insert a New Item Before Another Item
+      // You are given a list of 4 items in HTML.
+      // Create a button "Insert New Item Before 2nd Item".
+      // When clicked:
+      // Create a new <li> using createElement()
+      //     Add text using createTextNode()
+      //     Insert this new element before the 2nd <li> using insertBefore().
+
+      function insertLi() {
+        let newLi = document.createElement("li");
+        let liData = document.createTextNode(`"Dynamically typed data..."`);
+        newLi.appendChild(liData);
+
+        let parent = document.querySelector("ul");
+
+        let second = document.getElementById("sec");
+        parent.insertBefore(newLi,second)
+
+    }
+    </script>
+  </body>
+</h
