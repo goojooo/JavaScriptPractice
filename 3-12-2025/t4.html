@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TASK 4</title>
+  </head>
+  <body>
+    <section>
+      <div>
+        <ul>
+          <li>First li</li>
+          <li>Second li</li>
+          <li>Third li</li>
+          <li>Fourth li</li>
+          <li>Fifth li</li>
+        </ul>
+      </div>
+      <button onclick="deleteLi()">Remove List</button>
+    </section>
+    <script>
+      // Task 4: Delete an Item Using removeChild()
+      // Create a list of 5 items.
+      // Add a button "Delete Last Item"
+      // When clicked:
+      // Select the last <li> item
+      // Remove it using removeChild().
+
+      function deleteLi() {
+        let elLi = document.querySelector("ul");
+        if (elLi) {
+            let lastLi = elLi.lastElementChild;
+            if(lastLi)
+        {
+            lastLi.remove();
+        }
+        else{
+            console.log("All li has been removed already...")
+        }
+        }
+      }
+    </script>
+  </body>
+</html>
