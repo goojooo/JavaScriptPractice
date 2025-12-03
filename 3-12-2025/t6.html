@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TASK 6</title>
+  </head>
+  <body>
+    <section>
+      <div>
+        <ul></ul>
+        <button onclick="addItemBtn()">Add Item</button>
+        <button onclick="removeItemBtn()">Remove Item</button>
+      </div>
+    </section>
+    <script>
+      // Task 6: Dynamic Menu Builder
+      // Create a text field + Add Item button.
+      // When user enters text:
+      // Create new <li> using createElement()
+      //     Add text using createTextNode()
+      //     Add to menu using appendChild().
+      //     Add another button:
+      //     Remove First Item
+      //     Remove the first item using removeChild().
+
+      function addItemBtn() {
+        let newLi = document.createElement("li");
+        let addItem = document.createTextNode(prompt("Enter items :"));
+        newLi.appendChild(addItem);
+
+        let parent = document.querySelector("ul");
+        parent.appendChild(newLi);
+      }
+
+      function removeItemBtn() {
+        let liItems = document.querySelector("ul");
+
+        if (liItems) {
+          let firstLi = liItems.firstElementChild;
+          if (firstLi) {
+            firstLi.remove();
+          } else {
+            console.log("All items removed already...");
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

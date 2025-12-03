@@ -7,9 +7,11 @@
     <style>
       section {
         display: flex;
-        width: 100%;
+        max-width: 100%;
         padding: 80px;
         gap: 24px;
+        justify-content: center;
+        border: 2px dashed darkslategrey;
       }
       div {
         display: flex;
@@ -19,9 +21,9 @@
       button {
         border: none;
         background: white;
-        border-radius: 16px;
+        border-radius: 12px;
         font-weight: 700;
-        padding: 4% 6%;
+        padding: 4% 8%;
       }
     </style>
   </head>
@@ -31,19 +33,19 @@
         id="one"
         style="width: 150px; height: 150px; background-color: firebrick"
       >
-        <button onclick="removeBox1()">Remove1 Box</button>
+        <button onclick="removeBox1()">"Remove Me"</button>
       </div>
       <div
         id="two"
         style="width: 150px; height: 150px; background-color: rgb(48, 34, 178)"
       >
-        <button onclick="removeBox2()">Remove2 Box</button>
+        <button onclick="removeBox2()">"Remove Me"</button>
       </div>
       <div
         id="three"
         style="width: 150px; height: 150px; background-color: rgb(28, 247, 255)"
       >
-        <button onclick="removeBox3()">Remove3 Box</button>
+        <button onclick="removeBox3()">"Remove Me"</button>
       </div>
     </section>
     <script>
