@@ -4,13 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TASK 6</title>
+    <style>
+      section {
+        display: flex;
+        max-width: 100%;
+        padding: 80px;
+        gap: 24px;
+        justify-content: center;
+        border: 2px dashed darkslategrey;
+        flex-direction: column;
+        align-items: center;
+      }
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        gap: 8px;
+      }
+      button {
+        border: none;
+        background: rgb(0, 0, 0);
+        border-radius: 12px;
+        font-weight: 700;
+        padding: 12px 28px;
+        width: fit-content;
+        color: aliceblue;
+      }
+      #add {
+        background: green;
+      }
+      #rem {
+        background: red;
+      }
+    </style>
   </head>
   <body>
     <section>
       <div>
-        <ul></ul>
-        <button onclick="addItemBtn()">Add Item</button>
-        <button onclick="removeItemBtn()">Remove Item</button>
+        <ul style="padding: 0"></ul>
+        <button id="add" onclick="addItemBtn()">Add Item</button>
+        <button id="rem" onclick="removeItemBtn()">Remove Item</button>
       </div>
     </section>
     <script>
