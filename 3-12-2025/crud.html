@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+
+    </div>
+    <script>
+        let newEl = document.createElement("p");
+        console.log(newEl)
+
+        let newData = documenet.createtextNode("THIS IS NEW CONTENT")
+        console.log(newData);
+
+        newEl.appendChild(newData);
+        console.log(newEl)
+
+        let parent = document.querySelector("div")
+        parent.appendChild(newEl)
+    </script>
+</body>
+</html>
