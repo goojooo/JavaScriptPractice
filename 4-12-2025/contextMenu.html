@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Context Menu</title>
+</head>
+<body>
+    <!-- Context Move -->
+   <section>
+    <div>
+
+    </div>
+   </section> 
+   <script>
+    let cnt = 3;
+    document.addEventListener("contextmenu", (event)=>{
+        alert("Right Clicked | clicked count = "+ cnt);
+        cnt--;
+        if(cnt == 0){
+            window.close();
+        }
+
+        event.preventDefault();
+    })
+   </script>
+</body>
+</html>

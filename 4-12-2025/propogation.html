@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Propogation</title>
+    <style>
+      section {
+        height: 300px;
+        width: 100%;
+        border: 2px solid yellow;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      div {
+        height: 200px;
+        width: 75%;
+        border: 2px solid red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      span {
+        height: 100px;
+        width: 50%;
+        border: 2px solid rgb(55, 0, 255);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div>
+        <span>
+          <button>click</button>
+        </span>
+      </div>
+    </section>
+    <script>
+      let btn = doucument.querySelector("button");
+      btn.addEvenetListener("click", () => {
+        alert("BTN is clicked");
+      });
+      let span = doucument.querySelector("span");
+      span.addEvenetListener("click", () => {
+        alert("SPAN is clicked");
+      });
+      let div = doucument.querySelector("div");
+      div.addEvenetListener("click", () => {
+        alert("DIV is clicked");
+      });
+      let section = doucument.querySelector("section");
+      section.addEvenetListener("click", () => {
+        alert("SECTION is clicked");
+      });
+    </script>
+  </body>
+</html>
