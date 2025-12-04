@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TASK 4</title>
+    <style>
+      section {
+        padding: 4%;
+        border: 2px dashed pink;
+      }
+      button{
+        border: none;
+        background: red;
+        color: whitesmoke;
+        padding: 2px 8px;
+        
+      }
+  div{
+     /*   width: 200px;
+        height: 150px;
+        background: orangered;*/
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div>
+  lorem
+       
+      </div>
+       <p>
+         Want to see something ?
+       </p>
+    </section>
+    <script>
+// 4) Mouseover to Show Message
+// When user hovers over a paragraph (mouseover), show message:
+// "Mouse is over the text!"
+// When mouse leaves (mouseout), hide the message.
+
+    let hoverD = document.querySelector("p");
+    hoverD.addEventListener("mouseover", ()=>{
+      document.querySelector("div").style.display="block";
+    })
+       hoverD.addEventListener("mouseout", ()=>{
+      document.querySelector("div").style.display="none";
+    })
+    </script>
+  </body>
+</html>

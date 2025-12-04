@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TASK 9</title>
+    <style>
+      section {
+        padding: 4%;
+        border: 2px dashed pink;
+      }
+      button{
+        border: none;
+        background: red;
+        color: whitesmoke;
+        padding: 2px 8px;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div>
+      
+           <button id="btn">CLICK</button>
+            <p id="cnt">
+        0
+           
+          </p>
+          <p>Clicked count...</p>
+      </div>
+    </section>
+    <script>
+    // 9) . Click Counter
+// Count how many times a user clicks a button.
+// Show count below it
+
+    let btn = document.getElementById("btn");
+    let cntEl= document.getElementById("cnt");
+
+    let count =0;
+
+    btn.addEventListener("click", ()=>{
+      count++;
+      cntEl.textContent = count;
+      
+    })
+
+
+    </script>
+  </body>
+</html>

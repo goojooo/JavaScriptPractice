@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TASK 1</title>
+    <style>
+      section {
+        padding: 4%;
+        border: 2px dashed pink;
+      }
+      button{
+        border: none;
+        background: red;
+        color: whitesmoke;
+        padding: 2px 8px;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div>
+          <div>
+            <input type="password" name="" id="" />
+            <button>HIDE / SHOW</button>
+          </div>
+        
+      </div>
+    </section>
+    <script>
+      // Question:1)
+      // Create a simple password input field with a button (or icon) next to it that allows users to temporarily view their password by pressing and holding the button with the mouse.
+
+      // 🔧 Requirements:
+      // Use an <input type="password"> element for the password.
+      // Add a button (e.g., labeled "👁️" or "Show") next to the password field.
+      // When the user presses and holds the button using the mouse (mousedown), the password should become visible (type="text").
+      // When the user releases the mouse button (mouseup) or moves the mouse away from the button (mouseleave), the password should be hidden again (type="password").
+      // Style the form neatly using basic CSS for better appearance.
+
+      
+
+      let inp = document.querySelector("input");
+
+    
+
+      document.addEventListener("mousedown", ()=>{
+        inp.type = "text"
+      });
+  document.addEventListener("mouseup", ()=>{
+        inp.type = "password"
+      });
+
+
+   
+    </script>
+  </body>
+</html>

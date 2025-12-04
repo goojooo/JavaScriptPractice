@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TASK 3</title>
+    <style>
+      section {
+        padding: 4%;
+        border: 2px dashed pink;
+      }
+      button{
+        border: none;
+        background: red;
+        color: whitesmoke;
+        padding: 2px 8px;
+        
+      }
+      div{
+        width: 200px;
+        height: 150px;
+        background: orangered;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div>
+     <div>
+       
+     </div>
+       
+      </div>
+       <button id="sel">InC</button>
+    </section>
+    <script>
+// 3) Double Click to Increase Size
+// Create a box.
+// When user double-clicks, increase its width & height by 50px.
+
+      let btn = document.getElementById("sel");
+
+btn.addEventListener("dblclick", ()=>{
+  document.querySelector("div").style.width="250px"
+   document.querySelector("div").style.height="200px"
+  // alert("ok")
+})
+    </script>
+  </body>
+</html>

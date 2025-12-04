@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TASK 10</title>
+    <style>
+      section {
+        padding: 4%;
+        border: 2px dashed pink;
+      }
+
+  div{
+     width: 100%;
+        height: 100vh;
+      
+       
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div>
+  
+       
+      </div>
+    
+    </section>
+    <script>
+// 10) Border Change on Hover
+// On mouseover → add a thick border.
+// On mouseout → remove the border.
+
+    let hoverD = document.querySelector("div");
+
+    hoverD.addEventListener("mouseover", ()=>{
+      hoverD.style.border="8px solid black";
+    });
+       hoverD.addEventListener("mouseout", ()=>{
+       hoverD.style.border="none";
+    });
+
+
+
+    </script>
+  </body>
+</html>
