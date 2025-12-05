@@ -14,7 +14,9 @@
       document.addEventListener("keydown", (event) => {
         console.log(event.key);
 
-        document.textContent = event.key;
+            let y =document.getElementById("x").innerHTML=event.key
+
+                y++;
 
         if (event.ctrlKey && (event.key == "a" || event.key == "A")) {
           alert("Select Prevented");
