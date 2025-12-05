@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delegation</title>
+  </head>
+  <body>
+    <div id="parent">
+      <p id="one">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi fugiat
+        doloribus quod? Expedita, sint aliquam facere ad ipsa sequi sit iste eos
+        eaque accusamus odio esse impedit perspiciatis adipisci velit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi fugiat
+        doloribus quod? Expedita, sint aliquam facere ad ipsa sequi sit iste eos
+        eaque accusamus odio esse impedit perspiciatis adipisci velit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi fugiat
+        doloribus quod? Expedita, sint aliquam facere ad ipsa sequi sit iste eos
+        eaque accusamus odio esse impedit perspiciatis adipisci velit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi fugiat
+        doloribus quod? Expedita, sint aliquam facere ad ipsa sequi sit iste eos
+        eaque accusamus odio esse impedit perspiciatis adipisci velit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi fugiat
+        doloribus quod? Expedita, sint aliquam facere ad ipsa sequi sit iste eos
+        eaque accusamus odio esse impedit perspiciatis adipisci velit.
+      </p>
+    </div>
+    <script>
+      document.getElementById("parent").addEventListener("click", (event) => {
+        if (event.target && event.target.nodeName == "P") {
+          //   event.target.style.display = "none";
+          event.target.style.opacity = "0";
+        }
+      });
+    </script>
+  </body>
+</html>

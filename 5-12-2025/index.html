@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard Events</title>
+</head>
+<body>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam rerum quia voluptatem totam. Unde eos, ratione deleniti laboriosam tempora temporibus, ducimus aspernatur delectus vitae eius sequi est quaerat architecto sunt.
+    </p>
+    <script>
+        // document.addEventListener("keydown", (event)=>{
+        //     // alert("key down")
+        //     console.log(event.key)
+        //     console.log(event.keyCode)
+        // })
+        // document.addEventListener("keyup", (event)=>{
+        //     // alert("key down")
+        //     console.log(event.key)
+        //     console.log(event.keyCode)
+        // })
+
+        document.addEventListener("keydown", (e)=>{
+            // console.log(e.shiftKey)
+            // console.log(e.ctrlKey)
+
+            if(e.ctrlKey && e.key == "a"){
+                alert("prevented");
+                e.preventDefault();
+            }
+        })
+    </script>
+</body>
+</html>
