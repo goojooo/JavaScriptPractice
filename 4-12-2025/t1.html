@@ -9,23 +9,21 @@
         padding: 4%;
         border: 2px dashed pink;
       }
-      button{
+      button {
         border: none;
         background: red;
         color: whitesmoke;
         padding: 2px 8px;
-        
       }
     </style>
   </head>
   <body>
     <section>
       <div>
-          <div>
-            <input type="password" name="" id="" />
-            <button>HIDE / SHOW</button>
-          </div>
-        
+        <div>
+          <input type="password" name="" id="" />
+          <button>HIDE / SHOW</button>
+        </div>
       </div>
     </section>
     <script>
@@ -39,21 +37,14 @@
       // When the user releases the mouse button (mouseup) or moves the mouse away from the button (mouseleave), the password should be hidden again (type="password").
       // Style the form neatly using basic CSS for better appearance.
 
-      
-
       let inp = document.querySelector("input");
 
-    
-
-      document.addEventListener("mousedown", ()=>{
-        inp.type = "text"
+      document.addEventListener("mousedown", () => {
+        inp.type = "text";
       });
-  document.addEventListener("mouseup", ()=>{
-        inp.type = "password"
+      document.addEventListener("mouseup", () => {
+        inp.type = "password";
       });
-
-
-   
     </script>
   </body>
 </html>

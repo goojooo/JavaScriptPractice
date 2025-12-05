@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Hover Change</title>
+
+  <style>
+    img {
+      width: 250px;
+      height: auto;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <img id="hoverImg" src="769896.png" alt="Hover Image">
+
+  <script>
+    const img = document.getElementById("hoverImg");
+
+    img.addEventListener("mouseenter", () => {
+      img.src = "1400254.png";
+    });
+
+    img.addEventListener("mouseleave", () => {
+      img.src = "769896.png";
+    });
+  </script>
+
+</body>
+</html>

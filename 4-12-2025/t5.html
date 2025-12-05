@@ -10,8 +10,8 @@
         border: 2px dashed pink;
       }
 
-  div{
-      width: 100%;
+      div {
+        width: 100%;
         height: 100vh;
         border: 1px dotted rebeccapurple;
       }
@@ -19,14 +19,28 @@
   </head>
   <body>
     <section>
-      <div>
-  
-       
-      </div>
-      
+      <div id="demo"></div>
+      <p id="cor"></p>
     </section>
     <script>
+      // 5) Display Mouse Coordinates
+      // Create a large box.
+      // Every time the mouse moves inside it, show:
+      // X: ___ Y: ___
+      // using mousemove.
 
+      let cor = document.getElementById("cor");
+
+      document.getElementById("demo").addEventListener("mousemove", (event) => {
+        // console.log(event);
+        // console.log(event.layerX)
+        // console.log(event.layerY)
+
+        let x = event.clientX;
+        let y = event.clientY;
+
+        cor.textContent = ` X :${Math.round(x)} Y:${Math.round(y)}`;
+      });
     </script>
   </body>
 </html>

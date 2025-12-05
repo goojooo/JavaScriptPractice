@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Click and Double Click</title>
+
+  <style>
+    p {
+      font-size: 24px;
+      cursor: pointer;
+      user-select: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <p id="text">Click or Double Click me</p>
+
+  <script>
+    let text = document.getElementById("text");
+
+    text.addEventListener("click", () => {
+      text.textContent = "Clicked!";
+    });
+
+    text.addEventListener("dblclick", () => {
+      text.textContent = "Double Clicked!";
+    });
+  </script>
+
+</body>
+</html>

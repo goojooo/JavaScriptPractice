@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Right Click Background Change</title>
+
+    <style>
+      body {
+        height: 100vh;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>Right-click anywhere to change background color</h2>
+
+    <script>
+      document.addEventListener("contextmenu", (e) => {
+        e.preventDefault();
+
+        const randomColor =
+          "#" + Math.floor(Math.random() * 16777215).toString(16);
+
+        document.body.style.backgroundColor = randomColor;
+      });
+    </script>
+  </body>
+</html>

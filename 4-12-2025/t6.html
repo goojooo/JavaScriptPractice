@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TASK 6</title>
+  </head>
+  <body>
+    <section>
+      <div></div>
+    </section>
+    <script>
+      // 6) Right Click Menu
+      // Disable the browser default right-click using contextmenu.
+      // Show your own message:
+      // "Right click disabled!"
+
+      document.addEventListener("contextmenu", (event) => {
+        event.preventDefault();
+        alert(`"Right click disabled!"`);
+      });
+    </script>
+  </body>
+</html>
