@@ -6,22 +6,17 @@
     <title>TASK 7</title>
   </head>
   <body>
+    <p id="x"></p>
     <script>
-      // 5 Ctrl + S Shortcut
-      // Block the browser’s default Ctrl + S action and display an alert:
-      // "Save shortcut disabled!"
-
+      // 7 Show Pressed Keys Sequence
+      // Whenever the user types, show the sequence of keys pressed, e.g.:
+      // A → B → Backspace → C
+      let seq = [];
       document.addEventListener("keydown", (event) => {
-        console.log(event.key);
+        // console.log(event.key);
+        seq.push(event.key);
 
-            let y =document.getElementById("x").innerHTML=event.key
-
-                y++;
-
-        if (event.ctrlKey && (event.key == "a" || event.key == "A")) {
-          alert("Select Prevented");
-          event.preventDefault();
-        }
+        document.getElementById("x").textContent = seq.join(" → ");
       });
     </script>
   </body>
