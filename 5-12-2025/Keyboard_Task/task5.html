@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK 5</title>
+</head>
+<body>
+
+   
+    <p id="x"></p>
+    <script>
+      // 5 Ctrl + S Shortcut
+// Block the browser’s default Ctrl + S action and display an alert:
+// "Save shortcut disabled!"
+
+    document.addEventListener("keydown",(event)=>{
+            console.log(event.key)
+          
+                let y =document.getElementById("x").innerHTML=event.key
+
+                y++;
+            
+
+      
+
+            if(event.ctrlKey && ((event.key=="s" )||(event.key=="S"))){
+                alert("save Prevented")
+                event.preventDefault();
+            }
+
+        })
+
+    </script>
+</body>
+</html>

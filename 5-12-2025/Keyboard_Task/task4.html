@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK 4</title>
+</head>
+<body>
+
+    <input type="text">
+    
+    <script>
+        // 4 Highlight Input on Enter Key
+// When the user presses Enter, change the input field’s border to green.
+
+  let x = document.querySelector("input")
+x.addEventListener("keydown",(event)=>{
+            if(event.key=="Enter"){
+                event.preventDefault()
+                x.style.border = " 10px solid orangered"
+            }
+        })
+
+
+
+    </script>
+</body>
+</html>
