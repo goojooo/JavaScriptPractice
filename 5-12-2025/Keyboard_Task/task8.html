@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TASK 8</title>
+    <style>
+      p {
+        display: flex;
+        font-size: 48px;
+        border: 2px solid orangered;
+        min-height: 100px;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="xx"></p>
+    <script>
+      // 8 Only Allow Numbers
+      // Create an input box where the user can only type 0–9 digits.
+      // If the user types any other key, do not allow it.
+      let xx = document.getElementById("xx");
+      document.addEventListener("keydown", (event) => {
+        // console.log(event.key);
+        if (event.key && (event.key >= 0 || event.key <= 9)) {
+          //   alert(event.key);
+          let x = event.key;
+          xx.textContent = x;
+        }
+      });
+    </script>
+  </body>
+</html>

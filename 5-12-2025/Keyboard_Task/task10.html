@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 10</title>
+  </head>
+  <body>
+    <div>
+      <p id="x">Keydown :</p>
+      <p id="xx">Keypress :</p>
+      <p id="xxx">Keyup :</p>
+    </div>
+    <script>
+      // 10 Keyboard Event Logger
+      // Display logs like this when typing:
+      // Keydown: a
+      // Keypress: a
+      // Keyup: a
+
+      let x = document.getElementById("x");
+
+      document.addEventListener("keydown", (event) => {
+        let yy = event.key;
+        x.textContent = `Keydown : ${yy}`;
+      });
+      let xx = document.getElementById("xx");
+
+      document.addEventListener("keypress", (event) => {
+        let yy = event.key;
+        xx.textContent = `Keypress : ${yy}`;
+      });
+      let xxx = document.getElementById("xxx");
+
+      document.addEventListener("keyup", (event) => {
+        let yy = event.key;
+        xxx.textContent = `Keyup : ${yy}`;
+      });
+    </script>
+  </body>
+</html>

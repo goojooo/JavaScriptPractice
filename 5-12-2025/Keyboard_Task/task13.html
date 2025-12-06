@@ -3,20 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TASK 2</title>
+    <title>TASK 13</title>
   </head>
   <body>
+    <textarea name="" id="x"></textarea>
     <p id="cnt"></p>
     <script>
-      // 2 Typing Counter
-      // Create an input box that displays how many characters the user has typed using keyup.
-
+      // 13 Count Words on Typing
+      // Using keyup, count words typed inside a textarea and display the total count.
       let count = 0;
+      let x = document.getElementById("x");
       let y = document.getElementById("cnt");
 
       document.addEventListener("keyup", (event) => {
         // count = event.key;
         count++;
+        x.textContent = count;
         console.log(count);
 
         y.textContent = count;

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TASK 9</title>
+  </head>
+  <body>
+    <script>
+      // 9 Detect CapsLock On
+      // Show a warning:
+      // "Warning: CapsLock is ON"
+      // whenever the user types with CapsLock enabled.
+
+      //    document.addEventListener("keydown",(event)=>{
+      //         // alert(event.capsLock);
+      //     // console.log(event.key)
+
+      //     if(event.key == "CapsLock"){
+      //         alert("Warning: CapsLock is ON")
+      //
+      //     } else{
+      //   alert("Warning: CapsLock is OFF")
+      // }
+
+      // })
+
+      document.addEventListener("keydown", (event) => {
+        if (event.getModifierState("CapsLock")) {
+          alert("CapsLock is ON");
+        } else {
+          alert("CapsLock is OFF");
+        }
+      });
+    </script>
+  </body>
+</html>
