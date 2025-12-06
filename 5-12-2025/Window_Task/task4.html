@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TASK 4</title>
+  </head>
+  <body>
+    <script>
+      // 4 Track Online/Offline Status
+      // When the internet goes offline → show "You are offline!"
+      // When it reconnects → show "Back online!"
+      window.addEventListener("offline", () => {
+        alert("You are offline!");
+      });
+      window.addEventListener("online", () => {
+        alert("You are online!");
+      });
+    </script>
+  </body>
+</html>

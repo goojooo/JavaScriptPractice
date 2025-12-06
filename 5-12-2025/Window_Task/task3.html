@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TASK 3</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      h1 {
+        display: flex;
+        width: 100%;
+        z-index: 2;
+      }
+      #parent {
+        position: relative;
+      }
+      #child {
+        position: absolute;
+        top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+      <h1 style="position: fixed">HEADER</h1>
+      <div id="child">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+          doloremque error corporis blanditiis labore ducimus exercitationem
+          excepturi, culpa aspernatur. Velit qui magnam cumque? Quibusdam
+          mollitia repellendus dolorem, ea sunt aliquid.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+          doloremque error corporis blanditiis labore ducimus exercitationem
+          excepturi, culpa aspernatur. Velit qui magnam cumque? Quibusdam
+          mollitia repellendus dolorem, ea sunt aliquid.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+          doloremque error corporis blanditiis labore ducimus exercitationem
+          excepturi, culpa aspernatur. Velit qui magnam cumque? Quibusdam
+          mollitia repellendus dolorem, ea sunt aliquid.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+          doloremque error corporis blanditiis labore ducimus exercitationem
+          excepturi, culpa aspernatur. Velit qui magnam cumque? Quibusdam
+          mollitia repellendus dolorem, ea sunt aliquid.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+          doloremque error corporis blanditiis labore ducimus exercitationem
+          excepturi, culpa aspernatur. Velit qui magnam cumque? Quibusdam
+          mollitia repellendus dolorem, ea sunt aliquid.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+          doloremque error corporis blanditiis labore ducimus exercitationem
+          excepturi, culpa aspernatur. Velit qui magnam cumque? Quibusdam
+          mollitia repellendus dolorem, ea sunt aliquid.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+          doloremque error corporis blanditiis labore ducimus exercitationem
+          excepturi, culpa aspernatur. Velit qui magnam cumque? Quibusdam
+          mollitia repellendus dolorem, ea sunt aliquid.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+          doloremque error corporis blanditiis labore ducimus exercitationem
+          excepturi, culpa aspernatur. Velit qui magnam cumque? Quibusdam
+          mollitia repellendus dolorem, ea sunt aliquid.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+          doloremque error corporis blanditiis labore ducimus exercitationem
+          excepturi, culpa aspernatur. Velit qui magnam cumque? Quibusdam
+          mollitia repellendus dolorem, ea sunt aliquid.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+          doloremque error corporis blanditiis labore ducimus exercitationem
+          excepturi, culpa aspernatur. Velit qui magnam cumque? Quibusdam
+          mollitia repellendus dolorem, ea sunt aliquid.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+          doloremque error corporis blanditiis labore ducimus exercitationem
+          excepturi, culpa aspernatur. Velit qui magnam cumque? Quibusdam
+          mollitia repellendus dolorem, ea sunt aliquid.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+          doloremque error corporis blanditiis labore ducimus exercitationem
+          excepturi, culpa aspernatur. Velit qui magnam cumque? Quibusdam
+          mollitia repellendus dolorem, ea sunt aliquid.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+          doloremque error corporis blanditiis labore ducimus exercitationem
+          excepturi, culpa aspernatur. Velit qui magnam cumque? Quibusdam
+          mollitia repellendus dolorem, ea sunt aliquid.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+          doloremque error corporis blanditiis labore ducimus exercitationem
+          excepturi, culpa aspernatur. Velit qui magnam cumque? Quibusdam
+          mollitia repellendus dolorem, ea sunt aliquid.
+        </p>
+      </div>
+    </div>
+    <script>
+      // 3 Change Header Color on Scroll
+      // When the user scrolls down 100px, change the header background to blue.
+      // When the user scrolls back up, change it to transparent.
+
+      window.addEventListener("scroll", (event) => {
+        if (pageYOffset > 100) {
+          document.querySelector("h1").style.backgroundColor = "blue";
+          document.querySelector("h1").style.color = "white";
+        } else {
+          document.querySelector("h1").style.backgroundColor = "transparent";
+          document.querySelector("h1").style.color = "black";
+        }
+      });
+    </script>
+  </body>
+</html>
