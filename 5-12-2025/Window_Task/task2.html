@@ -14,16 +14,14 @@
 
       let sizeBox = document.getElementById("size");
 
-function showSize() {
-    sizeBox.textContent = `Width: ${window.innerWidth}px, Height: ${window.innerHeight}px`;
-}
+      function showSize() {
+        sizeBox.textContent = `Width: ${window.innerWidth}px, Height: ${window.innerHeight}px`;
+      }
 
-// Run once on page load
-showSize();
+      showSize();
 
-// Run every time the window is resized
-window.addEventListener("resize", showSize);
-
+      // Run every time the window is resized
+      window.addEventListener("resize", showSize);
     </script>
   </body>
 </html>

@@ -10,6 +10,20 @@
       // 6 Window Resize – Change Layout
       // If the window width is less than 600px, change background color to yellow.
       // Else keep it white.
+      function checkWidth() {
+    if (window.innerWidth < 600) {
+        document.body.style.backgroundColor = "yellow";
+    } else {
+        document.body.style.backgroundColor = "white";
+    }
+}
+
+// Run once on page load
+checkWidth();
+
+// Run on every window resize
+window.addEventListener("resize", checkWidth);
+
     </script>
   </body>
 </html>
