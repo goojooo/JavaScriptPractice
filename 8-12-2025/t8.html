@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 8</title>
+    <style>
+      div {
+        width: 300px;
+        height: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box"></div>
+    <script>
+      // Task 8 (Medium – DOM):
+      // Create a box whose background color changes every second using setInterval.
+
+      // let box = document.getElementById("box");
+
+      // setInterval(()=>{
+      //     box.style.backgroundColor = "red"
+      //     box.style.backgroundColor = "green"
+      // },2000);
+
+    //   let box = document.getElementById("box");
+    //   let isRed = true;
+
+    //   setInterval(() => {
+    //     if (isRed) {
+    //       box.style.backgroundColor = "red";
+    //     } else {
+    //       box.style.backgroundColor = "green";
+    //     }
+    //     isRed = !isRed; // switch color
+    //   }, 1000);
+
+      let box = document.getElementById("box");
+
+      setInterval(() => {
+        box.style.backgroundColor =
+          "#" + Math.floor(Math.random() * 16777215).toString(16);
+      }, 1000);
+    </script>
+  </body>
+</html>
