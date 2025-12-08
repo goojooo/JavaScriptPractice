@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 5</title>
+  </head>
+  <body>
+    <script>
+      // Task 5 (Medium):
+      // Create a <p> tag on the webpage that changes its text to:
+      // "Loading..."
+      // and after 3 seconds changes to:
+      // "Loaded!"
+
+      let p = document.createElement("p");
+      p.textContent = "Loading...";
+      document.body.appendChild(p);
+
+      setTimeout(() => {
+        p.textContent = "Loaded!";
+      }, 3000);
+    </script>
+  </body>
+</html>
