@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 7</title>
+  </head>
+  <body>
+    <script>
+      //     setInterval Tasks
+      // Task 7 (Easy):
+      // Display numbers from 1 to 10 using setInterval.
+      // Stop the interval once it reaches 10
+      let count = 1;
+      let interval = setInterval(() => {
+        document.writeln(count);
+        count++;
+      }, 1000);
+
+      //clearInterval()
+      setTimeout(() => {
+        clearInterval(interval);
+      }, 10000);
+    </script>
+  </body>
+</html>
