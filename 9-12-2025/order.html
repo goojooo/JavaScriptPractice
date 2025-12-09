@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="orderX()">Order</button>
+    <script>
+      function orderX() {
+        function order() {
+          return new Promise((resolve, reject) => {
+            console.log("Order placed...");
+
+            let restroOpen = true;
+
+            if (restroOpen) {
+              setTimeout(() => {
+                resolve("Order confirmed...!");
+              }, 2000);
+            } else {
+              reject("saarryy.... restro is closed");
+            }
+          });
+        }
+
+        order()
+          .then((result) => {
+            console.log(result);
+          })
+          .catch((reson) => {
+            console.log("Restro is closed...");
+          })
+          .finally(() => {
+            setTimeout(() => {
+              console.log("Thank you");
+            }, 2000);
+          });
+      }
+    </script>
+  </body>
+</html>

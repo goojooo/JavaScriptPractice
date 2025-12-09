@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Callback hell(Pyramid of DOM)</title>
+  </head>
+  <body>
+    <script>
+      function fetchData(callback) {
+        setTimeout(() => {
+          console.log("Data fetch...");
+          callback();
+        }, 1000);
+      }
+      function processData(callback) {
+        setTimeout(() => {
+          console.log("Data processing...");
+                    callback();
+        }, 2000);
+      }
+      function saveData() {
+        setTimeout(() => {
+          console.log("Data saved...");
+        }, 3000);
+      }
+
+    //   fetchData().then(processData).then(saveData).then(() => {
+    //     console.log("All task completed...")
+    //   });
+
+    fetchData(()=>{
+        processData(()=>{
+            saveData(()=>{
+                console.log("All task completed...")
+            })
+        })
+    })
+    </script>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Method 1</title>
+  </head>
+  <body>
+    <!-- 
+    1) All Promise method
+     Run multiple promises parallel resolve when are all resolve.
+    If any reject whole promise fail.
+
+    2) All Settle
+    Run all promioses in parallel but never fails 
+    It give the result of each promise (resolve or rejected)
+
+    3) Race
+    Return result of the first promise that finisehes first(success or fail)
+
+    4) Any
+    return the first successfull promise only
+    -->
+    <script>
+      // let p1 = Promise.resolve("p1")
+      // let p2 = Promise.resolve("p2")
+      // let p3 = Promise.resolve("p3")
+      // let p4 = Promise.resolve("p4")
+      // let p5 = Promise.resolve("p5")
+
+      // Promise.all([p1,p2,p3,p4,p5]).then((n)=>{
+      //     console.log(n)
+      // }).catch(()=>{
+      //     console.log("eroor")
+      // })
+      // Promise.allSettled([p1,p2,p3,p4,p5]).then((n)=>{
+      //     console.log(n)
+      // }).catch(()=>{
+      //     console.log("eroor")
+      // })
+
+      let s1 = new Promise((resolve, reject) => {
+        setTimeout(() => {
+          resolve("First");
+        }, 3000);
+      });
+      let s2 = new Promise((resolve, reject) => {
+        setTimeout(() => {
+          resolve("Second");
+        }, 2000);
+      });
+      let s3 = new Promise((resolve, reject) => {
+        setTimeout(() => {
+          reject("Third");
+        }, 1000);
+      });
+
+      // Promise.race([s1,s2,s3]).then((n)=>{
+      //     console.log(n)
+      // }).catch(()=>{
+      //     console.log("Rejected")
+      // })
+      Promise.any([s1, s2, s3])
+        .then((n) => {
+          console.log(n);
+        })
+        .catch(() => {
+          console.log("Rejected");
+        });
+    </script>
+  </body>
+</html>
