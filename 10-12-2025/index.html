@@ -6,6 +6,29 @@
     <title>Fetch Data</title>
   </head>
   <body>
+    <!-- 
+    Promise is the part of adv. jS and they are way to handle async operation in more managable way compare to using callback.
+    ***State of promise
+    1. Pending - Initial state were the operation still ongoing.
+    2. FulFill - The operation completed successfully and the promise is resolved with value.
+    3. Rejected - operation failed and the promise is rejected with reason.
+
+    *Creating a promise -- U can create promise using promise constructer which takes a function with 2 arguments 
+    a) resolve - A function that is called when the promise is fullfilled
+    b) reject - a function is called promise is rejected(Error)  
+
+    How we can handle Promise function---
+    -> You can handle promise using .then and catch function 
+    then() -- > it is use handle fullfull promise
+    catch() -- > its use to handle rejected promise
+
+    async awiat with promise -- > they provied more readable way to handle aync operation
+
+    async -- > it declears that the function will return promise and inside that function return promise
+
+    await -- > pause the execution of the function untill the promise resolve then return the result of the resolved value
+    it is only valid inside async function.
+    -->
     <div><button onclick="fetchData()">Fetch Data</button></div>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.11.0/axios.min.js"
