@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fetch Data All!</title>
+  </head>
+  <body>
+    <div>
+      <!-- 
+         1)fetch all json placeholder data (album,todos,photos....) using fetch as well as axios method after the clicking on button -->
+      <button onclick="fetchDataAxios()">Fetch Data(Axios)</button>
+      <button onclick="fetchType()">Fetch Data(Method)</button>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.11.0/axios.min.js"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      async function fetchDataAxios() {
+        try {
+          let response = await axios.get(
+            "https://jsonplaceholder.typicode.com/posts"
+          );
+          console.log(response.data);
+          response.data.map((n) => {
+            document.writeln(n.title + "<br>");
+          });
+        } catch (error) {
+          console.log(error);
+        }
+      }
+  async function fetchType() {
+  try {
+    let response = await fetch("https://jsonplaceholder.typicode.com/albums");
+    let data = await response.json();  // parse JSON
+
+    data.map((n) => {
+      document.writeln(n.title + "<br>");
+    });
+
+  } catch (err) {
+    console.log(err);
+  }
+}
+
+    </script>
+  </body>
+</html>
