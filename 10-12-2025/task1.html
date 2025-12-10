@@ -9,8 +9,12 @@
     <div>
       <!-- 
          1)fetch all json placeholder data (album,todos,photos....) using fetch as well as axios method after the clicking on button -->
-      <button onclick="fetchDataAxios()">Fetch Data(Axios)</button>
-      <button onclick="fetchType()">Fetch Data(Method)</button>
+      <button onclick="fetchDataAxios()">Fetch Post data(Axios)</button>
+      <button onclick="fetchType()">Fetch Post Data(Method)</button>
+      <button onclick="fetchDataAxiosAlbum()">Fetch Album Data(Axios)</button>
+      <button onclick="fetchTypeAlbum()">Fetch Album Data(Method)</button>
+      <button onclick="fetchDataUser()">Fetch Users Data(Axios)</button>
+      <button onclick="fetchTypeUser()">Fetch Users Data(Method)</button>
     </div>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.11.0/axios.min.js"
@@ -30,20 +34,86 @@
           console.log(error);
         }
       }
-  async function fetchType() {
-  try {
-    let response = await fetch("https://jsonplaceholder.typicode.com/albums");
-    let data = await response.json();  // parse JSON
+      async function fetchType() {
+        try {
+          let response = await fetch(
+            "https://jsonplaceholder.typicode.com/posts"
+          );
+          let data = await response.json(); // parse JSON
 
-    data.map((n) => {
-      document.writeln(n.title + "<br>");
-    });
+          data.map((n) => {
+            document.writeln(n.title + "<br>");
+          });
+        } catch (err) {
+          console.log(err);
+        }
+      }
+      async function fetchDataAxioAlbums() {
+        try {
+          let response = await axios.get(
+            "https://jsonplaceholder.typicode.com/albums"
+          );
+          console.log(response.data);
+          response.data.map((n) => {
+            document.writeln(n.title + "<br>");
+          });
+        } catch (error) {
+          console.log(error);
+        }
+      }
+      async function fetchTypeAlbum() {
+        try {
+          let response = await fetch(
+            "https://jsonplaceholder.typicode.com/albums"
+          );
+          let data = await response.json(); // parse JSON
 
-  } catch (err) {
-    console.log(err);
-  }
-}
+          data.map((n) => {
+            document.writeln(n.title + "<br>");
+          });
+        } catch (err) {
+          console.log(err);
+        }
+      }
+      async function fetchDataUser() {
+        try {
+          let response = await axios.get(
+            "https://jsonplaceholder.typicode.com/users"
+          );
+          console.log(response.data);
+          response.data.map((n) => {
+            document.writeln(n.id + "<br>");
+            document.writeln(n.username + "<br>");
+            document.writeln(n.name + "<br>");
+            document.writeln(n.email + "<br>");
+            document.writeln(n.company + "<br>");
+            document.writeln(n.address + "<br>");
+            document.writeln(n.phone + "<br>");
+          });
+        } catch (error) {
+          console.log(error);
+        }
+      }
+      async function fetchTypeUser() {
+        try {
+          let response = await fetch(
+            "https://jsonplaceholder.typicode.com/users"
+          );
+          let data = await response.json();
 
+          data.map((n) => {
+            document.writeln(n.id + "<br>");
+            document.writeln(n.username + "<br>");
+            document.writeln(n.name + "<br>");
+            document.writeln(n.email + "<br>");
+            document.writeln(n.company + "<br>");
+            document.writeln(n.address + "<br>");
+            document.writeln(n.phone + "<br>");
+          });
+        } catch (err) {
+          console.log(err);
+        }
+      }
     </script>
   </body>
 </html>
