@@ -3,4 +3,4 @@ import { sayHello } from './greet.js';
 
 window.add = add;
 window.sub = subtract;
-window.call = greet ;
+window.call = sayHello;
