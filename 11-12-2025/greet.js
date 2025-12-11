@@ -1,6 +1,3 @@
-function sayHello(){
-    let greet = "Hello paandaa...!!!"
-    alert(greet)
+export default function sayHello() {
+    alert("Hello paandaa...!!!");
 }
-
-export default {sayHello}
