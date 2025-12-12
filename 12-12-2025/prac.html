@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Theam</title>
+    <style>
+      .dark {
+        background: black;
+        color: "white";
+      }
+      .light {
+        background: white;
+        color: "black";
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis nesciunt ab quasi distinctio! Recusandae modi ratione alias doloremque blanditiis tempore inventore quaerat dignissimos ex? Dolore corrupti delectus omnis soluta eveniet.</p> -->
+    <button onclick="btn">Change Theam</button>
+    <script>
+      let btn = document.querySelector("button");
+      let body = document.querySelector("body");
+      btn.addEventListener("click", () => {
+        // body.style.backgroundColor = "black";
+        // body.classList.toggle("dark","light")
+
+        if (body.classList.contains("light")) {
+          body.classList.replace("light", "dark");
+          localStorage.setItem("theme", "dark");
+        } else {
+          body.classList.replace("dark", "light");
+          localStorage.setItem("theme", "light");
+        }
+      });
+      let saveTheme = localStorage.getItem("theme");
+    //   console.log(saveTheme);
+
+    if(saveTheme=="light"){
+          body.classList.add("dark");
+
+    } else{
+          body.classList.add( "light");
+
+    }
+
+    </script>
+  </body>
+</html>

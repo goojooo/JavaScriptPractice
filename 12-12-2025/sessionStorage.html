@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SESSION</title>
+</head>
+<body>
+     <!-- 
+    Features Data Life Time :
+    Exist only for current tab session.
+
+    Cleared when ?
+    When tab/Window is closed.
+
+     Storage.
+    5MB
+
+    Scope.
+    Only Accessible to same tabs
+    
+      Persistance.
+     survices -- > refresh but not tab close
+     
+     Usecase.
+    Temporary data..
+    -->
+    <button onclick="demo()">Click!  </button>
+    <script>
+        function demo(){
+            sessionStorage.setItem("rollNo","6969")
+
+        }
+    </script>
+</body>
+</html>
