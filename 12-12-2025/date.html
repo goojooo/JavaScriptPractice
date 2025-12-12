@@ -10,13 +10,19 @@
         <h1 id="time"></h1>
     </div>
    <script>
-    let cd = new Date();
-    // document.writeln(cd);
-    let hr = cd.getHours()
-    let mn = cd.getMinutes()
-    let ss = cd.getSeconds()
-
-    document.getElementById("time")
+       
+       setInterval(()=>{
+           
+           let cd = new Date();
+           // document.writeln(cd);
+           let hr = cd.getHours()
+           let mn = cd.getMinutes()
+           let ss = cd.getSeconds()
+           let time =  hh + ":" + mn + ":" + ss
+       
+           document.getElementById("time").innerHTML = hh + ":" + mn + ":" + ss
+           
+    },1000)
    </script> 
 </body>
 </html>
