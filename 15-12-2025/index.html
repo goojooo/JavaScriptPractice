@@ -1,29 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Event Loop</title>
-</head>
-<body>
-    <script>
-        function A(){
-            console.log("A")
-        }
-        function B(){
-            console.log("B")
-        }
-        function C(){
-            console.log("C")
-        }
-        function D(){
-            console.log("AD")
-        }
+  </head>
+  <body>
+    <!-- 
+       <== Event lop ==>
+            * Event loop is fundamental concept that enables asynchroze programming, it is responsible for managing and excuting multiple operations such as handling events, processing input / outputs, excuting code that does'nt block main excution thread.
 
-        A();
-        setTimeout(B,2000);
-        Promise.resolve().then(C);
-        D();
+            * Key concept of event loop
+            1) Call stack -- * Call stack is STACK data structure that keeps a track of function calls in the order they are excuted 
+                              * onces each function is called it added __
+                              * once the function finish excution it removes from the stack
+            2) Callback queue -- * CQ is holds all the functions they are ready for excution. 
+                                 * This are the function that are waiting for to complete such as     setTime out , eventListner , callback function.
+                                 * When the call stack is empty the event loop will take  next function  from callback queue and push it to call stack.
+
+            3) Event loop -- * The event loop constantly checks the call stack if it is empty it moves function from callback queue to the call stack for the excution.
+                             * The event loop ensures asynchronise operations like set time out , input output and other events are process in non-blocking manner allow with the rest of the code run without waiting.
+
+            4) MicroTask, MacroTask ---
+            Micro task - Queue handles the promises 
+            Macro task - Queue handles callback function setTimeout, setInterval, 
+            Commmon - event loop prioterized the micro task queue over the macro task
+    -->
+    <script>
+      function A() {
+        console.log("A");
+      }
+      function B() {
+        console.log("B");
+      }
+      function C() {
+        console.log("C");
+      }
+      function D() {
+        console.log("D");
+      }
+
+      A();
+      setTimeout(B, 2000);
+      Promise.resolve().then(C);
+      D();
     </script>
-</body>
+  </body>
 </html>
