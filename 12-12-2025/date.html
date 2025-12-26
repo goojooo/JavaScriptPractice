@@ -9,20 +9,24 @@
     <div>
         <h1 id="time"></h1>
     </div>
-   <script>
-       
-       setInterval(()=>{
-           
-           let cd = new Date();
-           // document.writeln(cd);
-           let hr = cd.getHours()
-           let mn = cd.getMinutes()
-           let ss = cd.getSeconds()
-           let time =  hh + ":" + mn + ":" + ss
-       
-           document.getElementById("time").innerHTML = hh + ":" + mn + ":" + ss
-           
-    },1000)
-   </script> 
+
+    <script>
+        setInterval(() => {
+            let cd = new Date();
+
+            let hr = cd.getHours();
+            let mn = cd.getMinutes();
+            let ss = cd.getSeconds();
+
+            // Add leading zero if needed
+            hr = hr < 10 ? "0" + hr : hr;
+            mn = mn < 10 ? "0" + mn : mn;
+            ss = ss < 10 ? "0" + ss : ss;
+
+            let time = hr + ":" + mn + ":" + ss;
+
+            document.getElementById("time").innerHTML = time;
+        }, 1000);
+    </script>
 </body>
 </html>
