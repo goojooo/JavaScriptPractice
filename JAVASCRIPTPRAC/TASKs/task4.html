@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK 4</title>
+</head>
+
+<body>
+    <script>
+        // TASK 4: Check Product Exists or Not
+        let arr = ["Mouse", "Laptop", "Keyboard"];
+        let productToCheck = "Mobile";
+        let productExists = false;
+        for(let i = 0; i < arr.length; i++){
+            if(arr[i] === productToCheck){
+                productExists = true;
+                console.log(productToCheck + " exists in the array.");
+                break;
+            } else{
+                console.log(productToCheck + " is not exists in the array.");
+
+            }
+        }
+    </script>
+</body>
+
+</html>

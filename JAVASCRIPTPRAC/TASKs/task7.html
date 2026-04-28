@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK 7</title>
+</head>
+
+<body>
+    <script>
+        // TASK 7: Separate Positive and Negative Numbers
+        let nums = [10, -5, 20, -8, 30, -1];
+        let positiveNums = [];
+        let negativeNums = [];
+        for (let i = 0; i < nums.length; i++) {
+            if (nums[i] >= 0) {
+                positiveNums.push(nums[i]);
+            } else {
+                negativeNums.push(nums[i]);
+            }
+        }
+        console.log("Original Numbers: " + nums);
+        console.log("Positive Numbers: " + positiveNums);
+        console.log("Negative Numbers: " + negativeNums);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK 3</title>
+</head>
+
+<body>
+    <script>
+        // TASK 3: Add GST 18% on Product Prices
+        let products = [
+            { name: "Mobile", price: 10000 },
+            { name: "Laptop", price: 50000 }
+        ];
+        for(let i = 0; i < products.length; i++){
+            let gstAmount = products[i].price * 0.18;
+            let priceWithGST = products[i].price + gstAmount;
+            console.log(products[i].name + " price with GST: " + priceWithGST);
+        }
+    </script>
+</body>
+
+</html>

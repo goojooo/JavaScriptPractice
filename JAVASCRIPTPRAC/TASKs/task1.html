@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK 1</title>
+</head>
+
+<body>
+    <script>
+        // TASK 1: Filter Active Users and Show Names
+        let users = [
+            { id: 1, name: "Sachin", active: true },
+            { id: 2, name: "Amit", active: false },
+            { id: 3, name: "Rahul", active: true },
+            { id: 4, name: "Neha", active: false }
+        ];
+        for(let i=0; i<users.length; i++){
+            if(users[i].active){
+                console.log(users[i].name);
+            }
+        }
+    </script>
+</body>
+
+</html>
