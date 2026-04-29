@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dark {
+            background-color: black;
+            color: white;
+        }
+
+        .light {
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <button>dark</button>
+
+    <!-- button-click-dark Theme and Text -light
+
+       button-click-light Theme and Text -dark
+
+       by using class .light , .dark
+
+       class Manipulation -->
+    <script>
+        let button = document.querySelector('body');
+
+        button.addEventListener('click', function () {
+            button.classList.toggle('dark');
+
+            if (button.classList.contains('dark')) {
+                button.textContent = 'light';
+            } else {
+                button.textContent = 'dark';
+            }
+        });
+    </script>
+</body>
+
+</html>
